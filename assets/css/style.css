@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+    color: black;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
