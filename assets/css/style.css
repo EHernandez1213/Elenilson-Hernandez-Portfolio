@@ -2,6 +2,8 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -17,7 +19,7 @@ header {
 }
 
 header image {
-    width:10%;
+    width: 20%;
     height: auto;
 }
 header h1 {
@@ -73,15 +75,36 @@ article h2 {
 }
 
 .first-project {
-    width:80%;
-    height:auto;
-    object-fit: contain;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    float:right;
+    width: 80%;
+    
+}
+.first-project p {
+    text-align: center;
 }
 
-article image {
-    width: 40%;
-    height: auto;
-    object-fit: scale-down;
+.first-project:hover {
+    border-width: 5px;
+    border-color: orange;
+}
+
+.other-projects {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: right;
+    width:40%;
+}
+.other-projects p {
+    text-align: center;
+}
+
+.other-projects:hover {
+    border-width: 5px;
+    border-color: orange;
 }
 
 footer {
@@ -104,3 +127,21 @@ footer ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
+@media screen and (max-width:768px) {
+    header {
+        align-items: center;
+    }
+    header nav {
+        justify-content: center;
+    }
+    
+    .first-project {
+        width:100%;
+    }
+    .other-projects{
+        width: 100%;
+    }
+
+}
+    
